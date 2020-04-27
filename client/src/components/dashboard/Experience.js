@@ -18,6 +18,7 @@ const Experience = ({ experience, deleteExperience }) => {
         )}
       </td>
       <td>
+        <button className='btn btn-light'>Edit</button>
         <button
           onClick={() => deleteExperience(exp._id)}
           className='btn btn-danger'
@@ -34,14 +35,14 @@ const Experience = ({ experience, deleteExperience }) => {
       <table className='table' width='100%'>
         <thead>
           <tr>
-            <th width='30%'>Company</th>
-            <th width='30%' className='hide-sm'>
+            <th width='27%'>Company</th>
+            <th width='27%' className='hide-sm'>
               Title
             </th>
-            <th width='30%' className='hide-sm'>
+            <th width='26%' className='hide-sm'>
               Years
             </th>
-            <th width='10%' />
+            <th width='20%' />
           </tr>
         </thead>
         <tbody>{experiences}</tbody>

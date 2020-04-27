@@ -18,6 +18,7 @@ const Education = ({ education, deleteEducation }) => {
         )}
       </td>
       <td>
+        <button className='btn btn-light'>Edit</button>
         <button
           onClick={() => deleteEducation(edu._id)}
           className='btn btn-danger'
@@ -34,14 +35,14 @@ const Education = ({ education, deleteEducation }) => {
       <table className='table' width='100%'>
         <thead>
           <tr>
-            <th width='30%'>School</th>
-            <th width='30%' className='hide-sm'>
+            <th width='27%'>School</th>
+            <th width='27%' className='hide-sm'>
               Degree
             </th>
-            <th width='30%' className='hide-sm'>
+            <th width='26%' className='hide-sm'>
               Years
             </th>
-            <th width='10%' />
+            <th width='20%' />
           </tr>
         </thead>
         <tbody>{educations}</tbody>

@@ -10,8 +10,6 @@ const EditProfile = ({
   getCurrentProfile,
   history,
 }) => {
-  let $text = '';
-
   const [formData, setFormData] = useState({
     company: '',
     website: '',

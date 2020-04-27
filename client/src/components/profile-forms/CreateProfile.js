@@ -5,8 +5,6 @@ import { connect } from 'react-redux';
 import { createProfile } from '../../actions/profile';
 
 const CreateProfile = ({ createProfile, history }) => {
-  let $text = '';
-
   const [formData, setFormData] = useState({
     company: '',
     website: '',
