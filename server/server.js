@@ -16,6 +16,7 @@ app.use('/api/auth', require('./routes/api/auth'));
 app.use('/api/profile', require('./routes/api/profile'));
 app.use('/api/posts', require('./routes/api/posts'));
 
-const PORT = 5000;
+const PORT =
+  process.env.NODE_ENV === 'production' ? process.env.PORT || 80 : 4000;
 
 app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
